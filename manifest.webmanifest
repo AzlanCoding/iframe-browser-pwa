@@ -1,0 +1,17 @@
+{
+  "name": "Iframe Browser PWA",
+  "short_name": "Iframe PWA",
+  "description": "Iframe browser as a Progressive Web App",
+  "scope": "/iframe-browser-pwa/",
+  "start_url": "/iframe-browser-pwa/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone", 
+  "icons": [
+      {
+        "src": "/iframe-browser-pwa/icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+  ]
+}
