@@ -4,7 +4,11 @@
   <link rel="manifest" href="/iframe-browser-pwa/manifest.webmanifest">
   <title> iFrame browser </title>
   <script language="javascript">
-  //document.getElementById("myIframe").src = "https://wwf.org";
+   if (navigator.serviceWorker) 
+     {
+       navigator.serviceWorker.register ('/iframe-browser-pwa/sw.js',{scope: '/iframe-browser-pwa/'})
+     }
+   //document.getElementById("myIframe").src = "https://wwf.org";
    //var iframe = document.getElementById("myIframe");
    //var website = iframe.src;
    //console.log(website);
