@@ -11,7 +11,7 @@
       {
         "src": "/github-page-pwa/img/icon.png",
         "type": "image/png",
-        "sizes": "700x700"
+        "sizes": "512x512"
       }
   ]
 }
