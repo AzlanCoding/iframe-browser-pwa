@@ -1,7 +1,7 @@
 {
-  "name": "Github Page PWA",
-  "short_name": "GPPWA",
-  "description": "Github Page as a Progressive Web App",
+  "name": "Azlan's Iframe Browser",
+  "short_name": "Iframe_Browser",
+  "description": "A browser within a website",
   "scope": "/iframe-browser-pwa/",
   "start_url": "/iframe-browser-pwa/",
   "background_color": "#ffffff",
