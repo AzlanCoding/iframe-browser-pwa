@@ -1,7 +1,7 @@
 console.log('I am running!');
 window.addEventListener('DOMContentLoaded', (event) => {
     var extNotLoaded;
-    fetch("chrome-extension://" + extensionID + "/manifest.json")
+    fetch("chrome-extension://gleekbfjekiniecknbkamfmkohkpodhe/manifest.json")
         .then(response => response.json())
         .then(data => {
             installedExtVersion = data.version;
