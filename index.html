@@ -40,16 +40,15 @@
 function checkSession(){
    var c = getCookie("visited");
    if (c === "yes") {
-     alert("Welcome back!");
+     alert("Welcome back! Make sure you have your extension on.");
    } 
 	else {
-		 ext_install()
-     alert("Welcome new visitor!");
+	ext_install();
    }
 }
 function ext_install() 
 	{
-  if (window.confirm('An extension is required for this website to work. Do you want to install/turn it on it now?')) 
+  if (window.confirm('An extension is required for this website to work. Do you want to install it now?')) 
    {	
 		setCookie("visited", "yes", 365)
 		window.location.href='https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe';
