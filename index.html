@@ -13,7 +13,8 @@
    var iframe = document.getElementById("myIframe");
    //var website = iframe.src;
    //console.log(website);
-   iframe.onerror = function() {
+   function ext_install() 
+	 {
    if (window.confirm('An extension is required for this website to work. Do you want to install/turn it on it now?')) 
      {
 		 		window.location.href='https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe';
@@ -84,7 +85,7 @@
  <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
  <input type="button" class="Exitfullscreen" value="Exit Fullscreen" onclick="closeFullscreen()">
 </div>
-<iframe align="center" width="100%" height="95%" src="https://www.google.com" onload = "check()" frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
+<iframe align="center" width="100%" height="95%" src="https://www.google.com" onload = "check()" onerror"ext_install"frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
 <script>
 function check(){
   document.getElementById("URL").value = "Enter a URL here";
