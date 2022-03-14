@@ -9,36 +9,52 @@
   <link rel="stylesheet" href="css/styles.css">
   <title> iFrame browser </title>
   <script language="javascript">
-	function setCookie(cname,cvalue,exdays) {
-  	const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+	function setCookie(c_name,value,exdays){
+		var exdate=new Date();exdate.setDate(exdate.getDate() + exdays);
+		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+		document.cookie=c_name + "=" + c_value;
+	}
 
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
+	function getCookie(c_name){
+		var c_value = document.cookie;
+		var c_start = c_value.indexOf(" " + c_name + "=");
+		if (c_start == -1){
+			c_start = c_value.indexOf(c_name + "=");
+		}
+		if (c_start == -1){
+			c_value = null;
+		}
+		else{
+			c_start = c_value.indexOf("=", c_start) + 1;
+			var c_end = c_value.indexOf(";", c_start);
+			if (c_end == -1){
+				c_end = c_value.length;
+			}
+			c_value = unescape(c_value.substring(c_start,c_end));
+		}
+		return c_value;
+	}
+
+	checkSession();
+
+function checkSession(){
+   var c = getCookie("visited");
+   if (c === "yes") {
+     alert("Welcome back!");
+   } 
+	else {
+		 ext_install()
+     alert("Welcome new visitor!");
+   }
 }
-	function ext_install() 
-	 {
-   if (window.confirm('An extension is required for this website to work. Do you want to install/turn it on it now?')) 
-     {	
-			  setCookie("alerted", "true", 7)
-		 		window.location.href='https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe';
-		 };
-   };
+function ext_install() 
+	{
+  if (window.confirm('An extension is required for this website to work. Do you want to install/turn it on it now?')) 
+   {	
+		setCookie("visited", "yes", 365)
+		window.location.href='https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe';
+		};
+  };
 
 function checkCookie() {
   let user = getCookie("alerted");
