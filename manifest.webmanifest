@@ -4,8 +4,8 @@
   "description": "A browser within a website",
   "scope": "/iframe-browser-pwa/",
   "start_url": "/iframe-browser-pwa/",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#2C2F33",
+  "theme_color": "#23272A",
   "display": "standalone", 
   "icons": [
       {
