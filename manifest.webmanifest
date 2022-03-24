@@ -14,4 +14,13 @@
         "sizes": "512x512"
       }
   ]
+  "background": {
+    "scripts": ["js/app.js"]
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
 }
