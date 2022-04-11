@@ -26,4 +26,4 @@ I managed to create a PWA for it: https://azlancoding.github.io/iframe-browser-p
 ~~2. converting html code to a progressive web app~~
 # Known issues
 1.some websites like reddit can only be shown in the iframe browser for 3 seconds and disappears after that.
-2.website accessed can't receive keyboard input
+2. Website cannot bypass proxy
