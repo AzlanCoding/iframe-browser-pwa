@@ -1,9 +1,35 @@
 <script>
+const d = new Date();
+//alert(d);
+
+const hrs = d.getHours();
+const min = d.getHours();
+//const sec = d.getSeconds();
+//alert(hrs);
+//alert(min);
 function pass() {
-  return prompt("Enter Password:", "Only those who uses it for good may obtain it from the creator");
+  return prompt("Enter Password:", "Unlocked during 10:40am to 11:20am GMT+0800 (Singapore Standard Time)");
 }
-while (true){
+function word() {
+while (true) {
 	if (pass() == "void") {break}
+}
+}
+function breaks() {
+	if (hrs == 10 && min >= 40) {
+		return true
+	}else if (hrs == 11 && min < 20) {
+		return true
+	}else {
+		return false
+	}
+}
+if (hrs >= 14 || hrs < 7 || breaks() == true){
+    //alert("pass not needed");
+    
+}else {
+    alert("You are using this webite during school hours. Pls enter the password.");
+    word();
 }
 </script>
 
