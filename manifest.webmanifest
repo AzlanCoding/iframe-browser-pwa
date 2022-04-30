@@ -1,12 +1,15 @@
 {
   "name": "Azlan's Iframe Browser",
-  "short_name": "IframeBrowser",
+  "short_name": "Iframe Browser",
   "description": "A browser within a website",
   "scope": "/iframe-browser-pwa/",
   "start_url": "/iframe-browser-pwa/",
   "background_color": "#2C2F33",
   "theme_color": "#23272A",
   "display": "standalone", 
+  "display_override": [ 
+    "window-controls-overlay" 
+  ],
   "icons": [
       {
         "src": "/iframe-browser-pwa/img/icon.png",
