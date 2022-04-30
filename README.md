@@ -15,7 +15,7 @@ Password to website: void
 2. I am only 14 😁.
 3. I did not make this extension, someonelse did.
 # Recently added features
-1. fullscreen option ~~(currently experimental)
+1. fullscreen option
 2. back and forward buttons
 # Upcoming features
 1. a sidebar that shows:
@@ -24,7 +24,6 @@ Password to website: void
 2. use of cookies to store history and bookmarks
 # Need help from public
 1. known issues
-~~2. converting html code to a progressive web app~~
 # Known issues
 1.some websites like reddit can only be shown in the iframe browser for 3 seconds and disappears after that.
 2. Website cannot bypass proxy
