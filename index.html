@@ -134,7 +134,7 @@ function checkCookie() {
    function ResetBox()
    {
    if(document.getElementById("URL").value == '')
-   {document.getElementById("URL").value='Enter a URL here';};
+   {document.getElementById("URL").value='';};
    }
    function LoadPage()
    { 
@@ -212,7 +212,7 @@ body {
   user-select: none;
   height: 100%;
   left: env(titlebar-area-x, 0);
-  width: env(titlebar-area-width, 100%);
+  width: env(titlebar-area-width, 50%);
 
   color: #FFFFFF;
   font-weight: bold;
@@ -262,7 +262,7 @@ body {
 <iframe align="center" width="100%" height="95%" src="https://www.google.com" onload = "check()" onerror"ext_install" allow="camera;microphone" frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
 <script>
 function check(){
-  document.getElementById("URL").value = "Enter a URL here";
+  document.getElementById("URL").value = "";
 }
 </script>
   <script>
