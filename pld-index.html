@@ -1,0 +1,208 @@
+<script>
+let d = new Date();
+//alert(d);
+
+let hrs = d.getHours();
+let min = d.getMinutes();
+let day = d.getDay();
+//let auth = false
+//const sec = d.getSeconds();
+//alert(hrs);
+//alert(min);
+function pass() {
+  return prompt("Enter Password:", "Unlocked during 10:40am to 11:20am GMT+0800 (Singapore Standard Time)");
+}
+function word() {
+while (true) {
+	if (pass() == "void") {
+	    //auth = true;
+	    break
+	}else{
+	    alert("invalid password")
+	    
+	}
+}
+}
+function breaks() {
+	if (hrs == 10 && min >= 40) {
+		return true
+	}else if (hrs == 11 && min < 20) {
+		return true
+	}else {
+		return false
+	}
+}
+if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == true){
+    //alert("pass not needed");
+    
+}else {
+    alert("You are using this webite during school hours. Pls enter the password to bypass. Current time: " + d);
+    word();
+}
+//}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+  background-color: #2C2F33;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Azlan's iframe Browser">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0, no-store">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title> Iframe Browser </title>
+  <link rel="canonical" href="https://azlancoding.github.io/iframe-browser-pwa/" />
+  <link rel="manifest" href="/iframe-browser-pwa/manifest.webmanifest">
+  <meta name="keywords" content="bypass, school, browser in website, cloud browser">
+  <link rel="stylesheet" href="css/styles.css">
+  <title> iFrame browser </title>
+  <script language="javascript">
+	function setCookie(c_name,value,exdays){
+		var exdate=new Date();exdate.setDate(exdate.getDate() + exdays);
+		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+		document.cookie=c_name + "=" + c_value;
+	}
+
+	function getCookie(c_name){
+		var c_value = document.cookie;
+		var c_start = c_value.indexOf(" " + c_name + "=");
+		if (c_start == -1){
+			c_start = c_value.indexOf(c_name + "=");
+		}
+		if (c_start == -1){
+			c_value = null;
+		}
+		else{
+			c_start = c_value.indexOf("=", c_start) + 1;
+			var c_end = c_value.indexOf(";", c_start);
+			if (c_end == -1){
+				c_end = c_value.length;
+			}
+			c_value = unescape(c_value.substring(c_start,c_end));
+		}
+		return c_value;
+	}
+
+	checkSession();
+
+function checkSession(){
+   var c = getCookie("visited");
+   if (c === "yes") {
+     alert("Welcome back! Make sure you have your extension on.");
+   } 
+	else {
+	ext_install();
+   }
+}
+function ext_install() 
+	{
+  if (window.confirm('An extension is required for this website to work. Do you want to install it now?')) 
+   {	
+		setCookie("visited", "yes", 365)
+		window.location.href='https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe';
+		};
+  };
+
+function checkCookie() {
+  let user = getCookie("alerted");
+  if (user != "") {
+    alert("Welcome again !");
+	} else 
+	{ext_install();}
+	
+}
+   //document.getElementById("myIframe").src = "https://wwf.org";
+   var iframe = document.getElementById("myIframe");
+   //var website = iframe.src;
+   //console.log(website);
+   document.addEventListener("scroll", function(event) 
+   {
+    var style = document.getElementById("myIframe").style;
+    style.webkitTransform = style.webkitTransform ? "" : "scale(1)";
+   })
+   /*function resizeIframe()
+   {
+    document.getElementById('myIframe').height = 100%;
+   }*/
+   function ResetBox()
+   {
+   if(document.getElementById("URL").value == '')
+   {document.getElementById("URL").value='Enter a URL here';};
+   }
+   function LoadPage()
+   { 
+     var objFrame=document.getElementById("myIframe"); 
+     objFrame.src=document.getElementById("URL").value;
+   }
+   var elem = document.documentElement
+   function openFullscreen() {
+     if (elem.requestFullscreen) 
+     {
+        elem.requestFullscreen();
+     }
+     else if (elem.webkitRequestFullscreen) { 
+        elem.webkitRequestFullscreen();
+     }
+     else if (elem.msRequestFullscreen) { 
+        elem.msRequestFullscreen();
+     }
+   }
+   function closeFullscreen() {
+     if (document.exitFullscreen) 
+     {
+        document.exitFullscreen();
+     } 
+     else if (document.webkitExitFullscreen) 
+     {
+        document.webkitExitFullscreen();
+     } 
+     else if (document.msExitFullscreen) 
+     {
+       document.msExitFullscreen();
+     }
+   }
+  </script>
+  <style>
+  .iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+  }
+  </style>
+</head>
+<body style="background-color:#2C2F33">
+<div style="Clear:both;"> 
+ <input type="text" value="https://www.google.com" class="frmUrlVal" ID="URL"onfocus="if (this.value == 'Enter a URL here') {this.value='https://'}" onblur="if (this.value == 'https://' || this.value == 'http://') { this.value='Enter a URL here';}">
+ <input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
+ <input type="button" VALUE="&#65513"  onClick="history.back()"> 
+ <input type="button" VALUE="&#65515"  onClick="history.forward()"> 
+ <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
+ <input type="button" class="Exitfullscreen" value="Exit Fullscreen" onclick="closeFullscreen()">
+ <button class="newWindow" onclick=" window.open('https://azlancoding.github.io/iframe-browser-pwa/','_blank')">New Window</button>
+ <button class="cloudbrowser" onclick=" window.open('https://replit.com/@azlancoding/free-and-unlimited-cloud-browser?embed=true','_blank')">Cloud browser</button>
+</div>
+<iframe align="center" width="100%" height="95%" src="https://www.google.com" onload = "check()" onerror"ext_install" allow="camera;microphone" frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
+<script>
+function check(){
+  document.getElementById("URL").value = "Enter a URL here";
+}
+</script>
+  <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/iframe-browser-pwa/sw.js',
+          {scope: '/iframe-browser-pwa/'}
+        )
+      }
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>
