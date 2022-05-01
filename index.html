@@ -32,7 +32,7 @@ function breaks() {
 		return false
 	}
 }
-if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == true){
+if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6/*|| auth == true*/){
     //alert("pass not needed");
     
 }else {
@@ -205,6 +205,19 @@ function checkCookie() {
   cursor: pointer;
   border-radius: 10px;
 }
+.button {
+  background-color: #ffffff; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -257,7 +270,7 @@ body {
   </style>
 </head>
 <body style="background-color:#2C2F33">
-<div id="titleBarContainer">
+<div id="titleBarContainer" style="position:relative; top: 0px; left: 0px;">
       <div id="titleBar" class=" draggable">
         <span class="draggable">Iframe Browser</span>
         <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" value="https://www.google.com"></input>
@@ -266,8 +279,8 @@ body {
         <input type="button" VALUE="&#65515"  onClick="history.forward()"> 
         <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
         <input type="button" class="Exitfullscreen" value="Exit Fullscreen" onclick="closeFullscreen()">
-        <button type="button" class="newWindow" onclick=" window.open('https://azlancoding.github.io/iframe-browser-pwa/','_blank')">New Window</button>
-        <button type="button" class="cloudbrowser" onclick=" window.open('https://replit.com/@azlancoding/free-and-unlimited-cloud-browser?embed=true','_blank')">Cloud browser</button>
+        <input type="button" class="newWindow" value="New Window" onclick=" window.open('https://azlancoding.github.io/iframe-browser-pwa/','_blank')">
+        <input type="button" class="cloudbrowser" value="Cloud Browser" onclick="window.open('https://replit.com/@azlancoding/free-and-unlimited-cloud-browser?embed=true','_blank')">
       </div>
     </div>
 <!div style="Clear:both;"> 
