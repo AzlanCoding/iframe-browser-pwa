@@ -209,6 +209,7 @@ urlbox.addEventListener("keydown", function (e) {
   display: inline-block;
   font-size: 10px;
   margin: 4px 2px;
+  margin-right: 5px
   cursor: pointer;
   border-radius: 10px;
   app-region: no-drag;
@@ -227,7 +228,7 @@ body {
 #titleBarContainer {
   position: absolute;
   top: 0;
-  left: -10px
+  left: 0;
   height: env(titlebar-area-height, var(--fallback-title-bar-height));
   width: 100%;
   background-color:#254B85;
@@ -239,7 +240,7 @@ body {
   display: flex;
   user-select: none;
   height: 100%;
-  left: env(titlebar-area-x, -10);
+  left: env(titlebar-area-x, 0);
   //left : 0px;
   width: env(titlebar-area-width, 50%);
 
@@ -250,7 +251,7 @@ body {
 
 #titleBar > span {
   margin: 0;
-  padding: 0px 16px 0px 16px;
+  //padding: 0px 16px 0px 16px;
 }
 
 #titleBar > input {
