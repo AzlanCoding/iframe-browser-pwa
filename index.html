@@ -1,6 +1,6 @@
 <script>
 let d = new Date();
-alert(d);
+//alert(d);
 
 let hrs = d.getHours();
 let min = d.getMinutes();
@@ -192,6 +192,14 @@ function checkCookie() {
   /* Pre-fix app-region during standardization process */
   -webkit-app-region: no-drag;
 }
+#child {
+  width: window.innerWidth;
+  height: window.innerHeight;
+  position: absolute;
+  top: env(titlebar-area-height, var(--fallback-title-bar-height)); 
+  left: 0;
+  right: 0;
+}
 
 .button {
   background-color: #ffffff; 
@@ -282,8 +290,8 @@ body {
 <!div style="Clear:both;"> 
  <!input type="text" value="https://www.google.com" class="frmUrlVal" ID="URL" placeholder = "Enter a URL" >
 <!/div>
-<div style="position:absolute; top: env(titlebar-area-height, var(--fallback-title-bar-height)); left: 0px;">
-<iframe align="top" width="window.innerWidth" height="window.innerHeight" allowtransparency="true" style="background: #FFFFFF;" src="https://www.google.com" onload = "check()" onerror"ext_install()" allow="camera;microphone" frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
+<div id = "child" >
+<iframe align="top" width="100%" height="100%" allowtransparency="true" style="background: #FFFFFF;" src="https://www.google.com" onload = "check()" onerror"ext_install()" allow="camera;microphone" frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
 </div>
 <script>
 window.onbeforeunload = () => '';
