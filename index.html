@@ -196,7 +196,7 @@ function checkCookie() {
   background-color: #ffffff; 
   border: none;
   color: white;
-  padding: 10px 16px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -265,14 +265,14 @@ body {
         <input type="button" VALUE="&#65515"  onClick="history.forward()"> 
         <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
         <input type="button" class="Exitfullscreen" value="Exit Fullscreen" onclick="closeFullscreen()">
-        <button class="newWindow" onclick=" window.open('https://azlancoding.github.io/iframe-browser-pwa/','_blank')">New Window</button>
-        <button class="cloudbrowser" onclick=" window.open('https://replit.com/@azlancoding/free-and-unlimited-cloud-browser?embed=true','_blank')">Cloud browser</button>
+        <button type="button" class="newWindow" onclick=" window.open('https://azlancoding.github.io/iframe-browser-pwa/','_blank')">New Window</button>
+        <button type="button" class="cloudbrowser" onclick=" window.open('https://replit.com/@azlancoding/free-and-unlimited-cloud-browser?embed=true','_blank')">Cloud browser</button>
       </div>
     </div>
 <!div style="Clear:both;"> 
  <!input type="text" value="https://www.google.com" class="frmUrlVal" ID="URL" placeholder = "Enter a URL" >
 <!/div>
-<iframe align="center" width="100%" height="95%" src="https://www.google.com" onload = "check()" onerror"ext_install" allow="camera;microphone" frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
+<iframe align="top" width="100%" height="100%" src="https://www.google.com" onload = "check()" onerror"ext_install()" allow="camera;microphone" frameborder=yes loading ="lazy" name="myIframe" id="myIframe"> </iframe>
 <script>
 function check(){
   document.getElementById("URL").value = "";
