@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700)
+
+body
+  background: #5A657A
+  color: white
+  font-family: "Roboto", sans-serif
+  
+  h1
+    margin-bottom: 20px
+  
+  p
+    font-size: 18px
+    line-height: 30px
+    
+  a
+    color: #FBD160
+  
+svg
+  display: block
+  margin: 0 auto
+  overflow: visible !important
+  
+  #robot_1_
+    animation-name: verticalAnimation
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    animation-timing-function: ease-in-out
+    
+  #light_1_
+    animation-name: blinkLight
+    animation-duration: .5s
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    animation-timing-function: steps(2)
+    
+  #leftEye_1_, #rightEye_1_
+    animation-name: blinkEye
+    animation-duration: 1.8s
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    animation-timing-function: linear
+    transform-origin: 50% 50%
+   
+  #leftArm_1_
+    animation-name: moveLeftArm
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    animation-timing-function: ease-in-out
+    transform-origin: 50% 10%
+    transition: all
+    
+  #rightArm_1_
+    animation-name: moveRightArm
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    animation-timing-function: ease-in-out
+    transform-origin: 50% 10%
+    
+  #shadow_1_
+    animation-name: shadowAnimation
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    animation-direction: alternate
+    animation-timing-function: ease-in-out
+    transform-origin: 50%
+    
+  
+@keyframes wave
+  0%
+    transform: rotate(120deg)
+  100%
+    transform: rotate(170deg)
+  
+@keyframes moveLeftArm
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(4deg)
+  
+@keyframes moveRightArm
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(-4deg)
+    
+@keyframes shadowAnimation
+  0%
+    transform: scale(1)
+    opacity: .4
+  100%
+    transform: scale(1.15)
+    opacity: .6
+@keyframes verticalAnimation
+  0%
+    transform: translateY(-10px)
+  100%
+    transform: translateY(10px)
+  
+@keyframes blinkLight
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+  
+@keyframes blinkEye
+  0%
+    transform: scaleY(0)
+  4%
+    transform: scaleY(1)
+  
+
+
+  
