@@ -179,7 +179,7 @@ urlbox.addEventListener("keydown", function (e) {
   .iframe-container {
     overflow: hidden;
     /* 16:9 aspect ratio */
-    padding-top: 56.25%;
+    //padding-top: 56.25%;
     position: 0px 0px;
     margin-top: 60px;
   }
@@ -209,7 +209,7 @@ urlbox.addEventListener("keydown", function (e) {
   display: inline-block;
   font-size: 10px;
   margin: 4px 2px;
-  margin-right: 5px
+  margin-right: 5px;
   cursor: pointer;
   border-radius: 10px;
   app-region: no-drag;
@@ -277,7 +277,7 @@ body {
       <div id="titleBar" class=" draggable">
         <span class="draggable">Iframe Browser</span>
         <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" value="https://www.google.com"></input>
-	<!input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
+	<input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
         <input type="button" VALUE="&#65513"  onClick="history.back()"> 
         <input type="button" VALUE="&#65515"  onClick="history.forward()"> 
         <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
