@@ -168,6 +168,12 @@ function checkCookie() {
        document.msExitFullscreen();
      }
    }
+var urlbox = document.getElementById("URL");
+urlbox.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {
+        LoadPage();
+    }
+});
   </script>
   <style>
   .iframe-container {
@@ -270,7 +276,7 @@ body {
       <div id="titleBar" class=" draggable">
         <span class="draggable">Iframe Browser</span>
         <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" value="https://www.google.com"></input>
-	<input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
+	<!input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
         <input type="button" VALUE="&#65513"  onClick="history.back()"> 
         <input type="button" VALUE="&#65515"  onClick="history.forward()"> 
         <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
