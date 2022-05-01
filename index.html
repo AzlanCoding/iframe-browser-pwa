@@ -197,7 +197,7 @@ function checkCookie() {
   background-color: #ffffff; 
   border: none;
   color: white;
-  padding: 0px 0px;
+  padding: 2px 4px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -221,6 +221,7 @@ body {
 #titleBarContainer {
   position: absolute;
   top: 0;
+  left: -10px
   height: env(titlebar-area-height, var(--fallback-title-bar-height));
   width: 100%;
   background-color:#254B85;
@@ -232,8 +233,8 @@ body {
   display: flex;
   user-select: none;
   height: 100%;
-  //left: env(titlebar-area-x, 0);
-  left : 0px;
+  left: env(titlebar-area-x, -10);
+  //left : 0px;
   width: env(titlebar-area-width, 50%);
 
   color: #FFFFFF;
