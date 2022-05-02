@@ -1,12 +1,16 @@
 <script>
-function lock() {
 let d = new Date();
-alert(d);
+//alert(d);
 
 let hrs = d.getHours();
 let min = d.getMinutes();
 let day = d.getDay();
 let auth = false
+let lock = `
+d = new Date()
+hrs = d.getHours();
+min = d.getMinutes();
+day = d.getDay();
 //const sec = d.getSeconds();
 //alert(hrs);
 //alert(min);
@@ -15,7 +19,7 @@ function pass() {
 }
 function word() {
 while (true) {
-	if (pass() == "void") {
+	if (pass() == "BZssK37k") {
 	    auth = true;
 	    break
 	}else{
@@ -41,8 +45,8 @@ if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == tr
     word();
 }
 //}
-}
-setInterval(lock(),1000)
+`;
+setInterval(lock,500)
 </script>
 
 <!DOCTYPE html>
