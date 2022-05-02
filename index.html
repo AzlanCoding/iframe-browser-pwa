@@ -1,11 +1,12 @@
 <script>
+function lock() {
 let d = new Date();
-//alert(d);
+alert(d);
 
 let hrs = d.getHours();
 let min = d.getMinutes();
 let day = d.getDay();
-//let auth = false
+let auth = false
 //const sec = d.getSeconds();
 //alert(hrs);
 //alert(min);
@@ -15,7 +16,7 @@ function pass() {
 function word() {
 while (true) {
 	if (pass() == "void") {
-	    //auth = true;
+	    auth = true;
 	    break
 	}else{
 	    alert("invalid password")
@@ -32,7 +33,7 @@ function breaks() {
 		return false
 	}
 }
-if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6/*|| auth == true*/){
+if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == true){
     //alert("pass not needed");
     
 }else {
@@ -40,6 +41,8 @@ if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6/*|| auth == 
     word();
 }
 //}
+}
+setInterval(lock(),1000)
 </script>
 
 <!DOCTYPE html>
