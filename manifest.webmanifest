@@ -10,6 +10,12 @@
   "display_override": [ 
     "window-controls-overlay" 
   ],
+  "capture_links": "existing_client_event",
+    "url_handlers" : [
+        {
+            "origin": "https://azlancoding.github.io/iframe-browser-pwa/index.html"
+        },
+    ]
   "icons": [
       {
         "src": "/iframe-browser-pwa/img/icon.png",
