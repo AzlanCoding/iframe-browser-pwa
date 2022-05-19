@@ -10,6 +10,7 @@ Using this extension to help the site work: https://chrome.google.com/webstore/d
 This extension ignores X-frame-headers and Content Security Policy (CSP) Headers. 
 I managed to create a PWA for it: https://azlancoding.github.io/iframe-browser-pwa/ 
 Password to website if prompted: BZssK37k 
+**TO UPDATE THE WEBSITE, CLEAR WEBSITE DATA(Cache)**
 # Disclaimer
 1. I don't actually know, html and Javascript, i just copy and modify online code based on experience with C++, C# and Python.  
 2. I am only 14 😁. 
@@ -17,6 +18,7 @@ Password to website if prompted: BZssK37k
 # Recently added features 
 1. fullscreen option
 2. back and forward buttons
+3. Windows Overlay controls (Enable via chrome://flags/#enable-desktop-pwas-window-controls-overlay)
 # Upcoming features
 1. a sidebar that shows:
   a. history
