@@ -2,7 +2,7 @@
   "name": "Azlan's Iframe Browser",
   "short_name": "Iframe Browser",
   "description": "A browser within a website",
-  "scope": "/iframe-browser-pwa/",
+  "scope": "/iframe-browser-pwa/ ",
   "start_url": "/iframe-browser-pwa/",
   "background_color": "#2C2F33",
   "theme_color": "#254B85",
