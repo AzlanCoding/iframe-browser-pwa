@@ -1,6 +1,6 @@
 var GHPATH = '/iframe-browser-pwa';
 var APP_PREFIX = 'iframebrowser_';
-var VERSION = 'version_006';
+var VERSION = 'version_007';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
