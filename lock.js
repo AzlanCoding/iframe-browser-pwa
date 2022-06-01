@@ -1,5 +1,4 @@
-This site is unlocked for the June holidays!
-/split/
+lock/split/
 // code for the lock
 d = new Date()
 hrs = d.getHours();
