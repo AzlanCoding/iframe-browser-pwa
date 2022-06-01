@@ -12,7 +12,7 @@ fetch('https://raw.githubusercontent.com/AzlanCoding/iframe-browser-pwa/main/loc
   .then(response => response.text())
   .then(data => {
 let split_str = "/split/";
-const data_arr data.split(split_str);
+const data_arr = data.split(split_str);
 let lock = data_arr[1];
 if (data_arr[0] = "lock") {
   setInterval(lock,500);
