@@ -1,6 +1,6 @@
 "use strict";
 
-var SW_VER = 'SW0001';
+var SW_VER = 'SW0002';
 
 self.oninstall = event => {
 	console.log(SW_VER + ': oninstall');
