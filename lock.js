@@ -1,4 +1,4 @@
-lock/split/
+This site is unlocked for the June holidays!/split/
 // code for the lock starts below
 // code below will only run if text before split is set to "lock"
 d = new Date()
