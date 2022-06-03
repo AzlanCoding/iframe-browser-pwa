@@ -15,6 +15,7 @@ function word() {
 while (true) {
 	if (pass() == "BZssK37k") {
 	    auth = true;
+	    console.log("AUTHENTICATION SUCCESSFUL! ACCESS GRANTED")
 	    break
 	}else{
 	    alert("invalid password")
@@ -32,9 +33,10 @@ function breaks() {
 	}
 }
 if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == true){
-    //alert("pass not needed");
+    console.log("pass not needed as requirent full filled");
     
 }else {
+    console.log("AUTHENTICATING...")
     alert("You are using this webite during school hours. Pls enter the password to bypass. Current time: " + d);
     word();
 }
