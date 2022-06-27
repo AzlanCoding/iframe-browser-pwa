@@ -9,7 +9,7 @@ day = d.getDay();
 //alert(hrs);
 //alert(min);
 function pass() {
-  return prompt("Enter Password:", "Unlocked during 10:40am to 11:20am GMT+0800 (Singapore Standard Time)");
+  return prompt("Enter Password:", "Unlocked during 11:00am to 11:40am GMT+0800 (Singapore Standard Time)");
 }
 function word() {
 while (true) {
@@ -18,22 +18,23 @@ while (true) {
 	    console.log("AUTHENTICATION SUCCESSFUL! ACCESS GRANTED")
 	    break
 	}else{
-	    alert("invalid password")
+	    alert("ACCESS DENIED")
 	    
 	}
 }
 }
 function breaks() {
-	if (hrs == 10 && min >= 40) {
+	let falsed = false;
+	if (hrs == 11 && min >= 40 && falsed == true) { /*not needed*/ 
 		return true
-	}else if (hrs == 11 && min < 20) {
+	}else if (hrs == 11 && min <= 40) {
 		return true
 	}else {
 		return false
 	}
 }
 if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == true){
-    console.log("pass not needed as requirent full filled");
+    console.log("pass not needed as requirent fullfilled");
     
 }else {
     console.log("AUTHENTICATING...")
