@@ -8,7 +8,7 @@
   "theme_color": "#254B85",
   "display": "standalone", 
   "display_override": [ 
-    "tabbed" 
+    "window-controls-overlay" 
   ],
   "icons": [
       {
