@@ -21,6 +21,8 @@ Password to website if prompted: BZssK37k <br>
 1. fullscreen option
 2. back and forward buttons
 3. Tab strib(removed the windows overlay function) (Enable via chrome://flags/#enable-desktop-pwas-tab-strip)
+4. No longer need to key in `"http://"` in the front of url
+5. Fixed bug in which blank url input returns blank iframe (now returns 404)
 # Upcoming features
 1. a sidebar that shows:
   a. history
