@@ -4,8 +4,8 @@
   "description": "A browser within a website",
   "scope": "/iframe-browser-pwa/",
   "start_url": "https://azlancoding.github.io/iframe-browser-pwa/",
-  "background_color": "#2C2F33",
-  "theme_color": "#254B85",
+  "background_color": "#254B85",
+  "theme_color": "#2C2F33",
   "display": "standalone", 
   "display_override": [ 
     "tabbed" 
