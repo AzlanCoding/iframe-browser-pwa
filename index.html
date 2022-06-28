@@ -46,6 +46,19 @@ body {
   <link rel="stylesheet" href="css/styles.css">
   <title> iFrame browser </title>
   <script language="javascript">
+	const getValidUrl = (url = "") => {
+    let newUrl = window.decodeURIComponent(url);
+    newUrl = newUrl.trim().replace(/\s/g, "");
+
+    if(/^(:\/\/)/.test(newUrl)){
+        return `http${newUrl}`;
+    }
+    if(!/^(f|ht)tps?:\/\//i.test(newUrl)){
+        return `http://${newUrl}`;
+    }
+
+    return newUrl;
+};
 	function setCookie(c_name,value,exdays){
 		var exdate=new Date();exdate.setDate(exdate.getDate() + exdays);
 		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
@@ -121,7 +134,8 @@ function checkCookie() {
    function LoadPage()
    { 
      var objFrame=document.getElementById("myIframe"); 
-     objFrame.src=document.getElementById("URL").value;
+     var newurl = getValidUrl(document.getElementById("URL").value);
+     objFrame.src = url;
    }
    var elem = document.documentElement
    function openFullscreen() {
@@ -257,7 +271,7 @@ body {
 }
   </style>
 </head>
-<body style="background-color:#2C2F33">
+<body style="background-color:#254B85">
 <div id="titleBarContainer" >
       <div id="titleBar">
         <span class="draggable">Iframe Browser</span>
