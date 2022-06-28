@@ -22,45 +22,9 @@ self.onactivate = event => {
 			return Promise.all(keys.map(key => {
 				if (key != SW_VER) return caches.delete(key);
 			}));
-		})
-		.then(() => {
-			return self.clients.claim();
-		})
-	);
-}
-
-self.onfetch = event => {
-	console.log(SW_VER + ': onfetch = ' + event.request.url);
-	event.respondWith(caches.match(event.request)
-		.then(cached => cached || fetch(event.request))
-	);
-}
-
-self.onmessage = event => {
-	console.log(SW_VER + ': onmessage = ' + event.data);
-	if (event.data === 'skip-waiting') return skipWaiting();
-	if (event.data === 'get-version') return event.ports[0].postMessage(SW_VER);
-}
-
-self.addEventListener('activate', function (e) {
-  e.waitUntil(
-    caches.keys().then(function (keyList) {
-      var cacheWhitelist = keyList.filter(function (key) {
-        return key.indexOf(APP_PREFIX)
-      })
-      cacheWhitelist.push(CACHE_NAME);
-      return Promise.all(keyList.map(function (key, i) {
-        if (cacheWhitelist.indexOf(key) === -1) {
-          console.log('Deleting cache : ' + keyList[i] );
-          return caches.delete(keyList[i])
-        }
-      }))
-    })
-  )
-})
 var GHPATH = '/iframe-browser-pwa';
 var APP_PREFIX = 'iframebrowser_';
-var VERSION = 'version_007';
+var VERSION = 'version_008';
 var URLS = [    
   `${GHPATH}/`,
   `${GHPATH}/index.html`,
