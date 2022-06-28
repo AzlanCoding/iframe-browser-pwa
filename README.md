@@ -18,7 +18,7 @@ Password to website if prompted: BZssK37k
 # Recently added features 
 1. fullscreen option
 2. back and forward buttons
-3. Windows Overlay controls (Enable via chrome://flags/#enable-desktop-pwas-window-controls-overlay)
+3. Tab strib(removed the windows overlay function) (Enable via chrome://flags/#enable-desktop-pwas-tab-strip)
 # Upcoming features
 1. a sidebar that shows:
   a. history
