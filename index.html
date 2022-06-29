@@ -175,7 +175,7 @@ function checkCookie() {
     //margin-top: 60px;
   }
  :root {
-  --fallback-title-bar-height: 5%;
+  --fallback-title-bar-height: 40;
 }
 
 .draggable {
@@ -195,7 +195,8 @@ function checkCookie() {
   height: 100vh;
   flex: 1 1 auto;
   position: absolute;
-  top: env(titlebar-area-height, var(--fallback-title-bar-height)); 
+  /*top: env(titlebar-area-height, var(--fallback-title-bar-height)); */
+  top: 5%；
   left: 0;
   right: 0;
 }
@@ -230,7 +231,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: env(titlebar-area-height, var(--fallback-title-bar-height));
+  /*height: env(titlebar-area-height, var(--fallback-title-bar-height));*/
+  height: 5%;
   width: 100%;
   background-color:#254B85;
 }
@@ -267,7 +269,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  top: env(titlebar-area-height, var(--fallback-title-bar-height));
+  /*top: env(titlebar-area-height, var(--fallback-title-bar-height));*/
+  top: 5%;
   overflow-y: scroll;
 }
   </style>
