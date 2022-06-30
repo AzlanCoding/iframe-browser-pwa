@@ -1,6 +1,6 @@
 # iframe-browser-pwa
 [browser-in-website](https://github.com/AzlanCoding/browser-in-website) project but in a PWA form  <br>
-![image](https://user-images.githubusercontent.com/101229146/176586625-0b8c6b44-cf37-4a01-adde-d615271aae06.png)
+![image](https://raw.githubusercontent.com/AzlanCoding/azlancoding.github.io/main/iframe-browser/Screen%20recording%202022-06-30%2011.25.19.gif)
 
 Reference: [codepo8/github-page-pwa](https://github.com/codepo8/github-page-pwa/blob/main/manifest.webmanifest)  <br>
 icon from [Flaticon](https://www.flaticon.com/free-icons/web-development)  <br>
