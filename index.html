@@ -138,6 +138,10 @@ function checkCookie() {
      var newurl = getValidUrl(document.getElementById("URL").value);
      objFrame.src = newurl;
    }
+   function ReloadPage()
+   {
+     document.getElementById('myIframe').contentWindow.location.reload()
+   }
    var elem = document.documentElement
    function openFullscreen() {
      if (elem.requestFullscreen) 
@@ -278,7 +282,7 @@ body {
         <span class="draggable" style="font-size: 65%; width: 8vh; height: 5vh">Iframe Browser</span>
         <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" value="https://www.google.com" size="25px"></input>
 	<input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
-	<input type="button" VALUE="&#x21bb"  onClick="document.getElementById('myIframe').contentWindow.location.reload()">
+	<input type="button" VALUE="&#x21bb"  onClick="ReloadPage()">
         <input type="button" VALUE="&#65513"  onClick="history.back()">
         <input type="button" VALUE="&#65515"  onClick="history.forward()">
         <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
