@@ -16,22 +16,24 @@ Password to website if prompted: BZssK37k <br>
 # Disclaimer
 1. I don't actually know, html and Javascript, I just copied and modify online code based on experience with C++, C# and Python.  
 2. I am only 14 😁. 
-3. I did not make this extension, someonelse did. 
+3. I did not make this extension, someonelse did.
+4. Use of this website is at your own risk. If your school cathches you, It's none of my buisiness.
 # Recently added features 
-1. fullscreen option
-2. back and forward buttons
+1. Fullscreen option
+2. Back and forward buttons
 3. Tab strib(removed the windows overlay function) (Enable via chrome://flags/#enable-desktop-pwas-tab-strip)
 4. No longer need to key in `"http://"` in the front of url
 5. Fixed bug in which blank url input returns blank iframe (now returns 404)
+6. Added reload button! (yes finally)
 # Upcoming features
-1. a sidebar that shows:
-  a. history
-  b. bookmarks
-2. use of cookies to store history and bookmarks
+1. A sidebar that shows:
+  a. History
+  b. Bookmarks
+2. Use of cookies to store history and bookmarks
 # Removed Features
 1. Windows Overlay Function was replaced with Tab Strip as it gave it a more, browser like look.
 # Need help from public
 1. known issues
 # Known issues
-1. some websites like reddit can only be shown in the iframe browser for 3 seconds and disappears after that.
+1. Some websites like reddit can only be shown in the iframe browser for 3 seconds and disappears after that.
 2. Website cannot bypass proxy
