@@ -134,9 +134,13 @@ function checkCookie() {
    }
    function LoadPage()
    { 
-     var objFrame=document.getElementById("myIframe"); 
-     var newurl = getValidUrl(document.getElementById("URL").value);
-     objFrame.src = newurl;
+     var objFrame=document.getElementById("myIframe");
+     if (document.getElementById("URL").value != "") {
+     	var newurl = getValidUrl(document.getElementById("URL").value);
+     	objFrame.src = newurl;
+     } else {
+	   	objFrame.src = "https://azlancoding.github.io/iframe-browser-pwa/404.html";
+		 }   
    }
    function ReloadPage()
    {
