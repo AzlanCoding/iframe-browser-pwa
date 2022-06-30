@@ -1,5 +1,7 @@
 # iframe-browser-pwa
-browser-in-website project but in a PWA form  <br>
+[browser-in-website](https://github.com/AzlanCoding/browser-in-website) project but in a PWA form  <br>
+<img src="blob:chrome-untrusted://media-app/72cc91c9-492c-4d4f-a72f-c9563aa83848" alt="Screen recording 2022-06-30 11.25.19.gif"/>![image](https://user-images.githubusercontent.com/101229146/176586625-0b8c6b44-cf37-4a01-adde-d615271aae06.png)
+
 Reference: [codepo8/github-page-pwa](https://github.com/codepo8/github-page-pwa/blob/main/manifest.webmanifest)  <br>
 icon from [Flaticon](https://www.flaticon.com/free-icons/web-development)  <br>
 <br>
@@ -23,8 +25,10 @@ Password to website if prompted: BZssK37k <br>
 2. Back and forward buttons
 3. Tab strib(removed the windows overlay function) (Enable via chrome://flags/#enable-desktop-pwas-tab-strip)
 4. No longer need to key in `"https://"` in the front of url
-5. Fixed bug in which blank url input returns blank iframe (now returns 404)
-6. Added reload button! (yes finally)
+5. Added reload button! (yes finally!)
+# Recently fixed
+1. Fixed bug in which blank url input returns blank iframe (now returns 404)
+2. Disabled spellcheck in url bar
 # Upcoming features
 1. A sidebar that shows:
   a. History
