@@ -314,7 +314,7 @@ function check(){
 }
 </script>
   <script>
-      checkt = 'document.getElementById("myiframe").title = "iframe";'
+      checkt = 'document.getElementById("myiframe").title = "iframe"; document.getElementById("myiframe").contentWindow.history.replaceState('WhatEverNameYouWant', "iframe", "https://azlancoding.github.io/iframe-browser-pwa");'
       setInterval(checkt,500);
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
