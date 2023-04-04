@@ -46,6 +46,20 @@ body {
   <link rel="stylesheet" href="css/styles.css">
   <title> iFrame browser </title>
   <script language="javascript">
+    let urlStart;
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('url')){
+      //alert(urlParams.get('url'));
+      document.getElementById("URL").value = urlParams.get('url');
+      document.getElementById("myiframe").src = urlParams.get('url');
+      urlStart = urlParams.get('url');
+    }
+    else
+    {
+      document.getElementById("URL").value = "https://www.google.com";
+      document.getElementById("myiframe").src = "https://www.google.com";
+      urlStart = "https://www.google.com";
+    }
 	const getValidUrl = (url = "") => {
     let newUrl = window.decodeURIComponent(url);
     newUrl = newUrl.trim().replace(/\s/g, "");
@@ -328,10 +342,12 @@ function check(){
      const urlParams = new URLSearchParams(window.location.search);
      if (urlParams.has('url')){
        //alert(urlParams.get('url'));
+       document.getElementById("URL").value = urlParams.get('url');
        document.getElementById("myiframe").src = urlParams.get('url');
      }
      else
      {
+       document.getElementById("URL").value = "https://www.google.com";
        document.getElementById("myiframe").src = "https://www.google.com";
      }
   </script>
