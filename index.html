@@ -324,5 +324,10 @@ function check(){
       }
   </script>
   <script src="js/app.js"></script>
+  <script>
+     const urlParams = new URLSearchParams(window.location.search);
+     if (urlParams.has('url')){
+       document.getElementById("myiframe").src = urlParams.get('url')
+     }
 </body>
 </html>
