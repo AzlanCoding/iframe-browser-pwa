@@ -327,7 +327,8 @@ function check(){
   <script>
      const urlParams = new URLSearchParams(window.location.search);
      if (urlParams.has('url')){
-       document.getElementById("myiframe").src = urlParams.get('url')
+       alert(urlParams.get('url'));
+       document.getElementById("myiframe").src = urlParams.get('url');
      }
   </script>
 </body>
