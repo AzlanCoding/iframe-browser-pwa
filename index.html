@@ -327,6 +327,7 @@ function check(){
 }
 </script>
   <script>
+      alert(document.getElementById("myiframe").src);
       checkt = 'document.getElementById("myiframe").title = "iframe"; document.getElementById("myiframe").contentWindow.history.replaceState(, "iframe", "https://azlancoding.github.io/iframe-browser-pwa");'
       setInterval(checkt,500);
       if (navigator.serviceWorker) {
@@ -338,7 +339,6 @@ function check(){
   </script>
   <script src="js/app.js"></script>
   <script>
-     alert(document.getElementById("myiframe").src);
      const urlParams = new URLSearchParams(window.location.search);
      if (urlParams.has('url')){
        //alert(urlParams.get('url'));
