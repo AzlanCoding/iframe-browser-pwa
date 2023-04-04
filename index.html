@@ -52,7 +52,6 @@ body {
       //document.getElementById("URL").value = urlParams.get('url');
       //document.getElementById("myiframe").src = urlParams.get('url');
       urlStart = urlParams.get('url');
-      alert(urlStart);
     }
     else
     {
@@ -60,6 +59,7 @@ body {
       //document.getElementById("myiframe").src = "https://www.google.com";
       urlStart = "https://www.google.com";
     }
+    alert(typeof urlStart);
 	const getValidUrl = (url = "") => {
     let newUrl = window.decodeURIComponent(url);
     newUrl = newUrl.trim().replace(/\s/g, "");
