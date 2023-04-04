@@ -284,7 +284,7 @@ body {
 <div id="titleBarContainer" >
       <div id="titleBar">
         <span class="draggable" style="font-size: 65%; width: 8vh; height: 5vh">Iframe Browser</span>
-        <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" spellcheck="false" value="https://www.google.com" size="25px"></input>
+        <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" spellcheck="false" value="" size="25px"></input>
 	<input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
 	<input type="button" VALUE="&#x21bb"  onClick="ReloadPage()">
         <input type="button" VALUE="&#65513"  onClick="history.back()">
@@ -296,10 +296,10 @@ body {
       </div>
 </div>
 <!div style="Clear:both;"> 
- <!input type="text" value="https://www.google.com" class="frmUrlVal" ID="URL" placeholder = "Enter a URL" >
+ <!input type="text" value="" class="frmUrlVal" ID="URL" placeholder = "Enter a URL" >
 <!/div>
 <div id = "child" >
-<iframe align="top" width="100%" height="100%" allowtransparency="true" style="background: #FFFFFF;" src="https://www.google.com" onload = "check()" onerror"ext_install()" allow="camera *;microphone *" frameborder=yes loading ="lazy" name="myIframe" id="myIframe" title="iframe"> </iframe>
+<iframe align="top" width="100%" height="100%" allowtransparency="true" style="background: #FFFFFF;" src="" onload = "check()" onerror"ext_install()" allow="camera *;microphone *" frameborder=yes loading ="lazy" name="myIframe" id="myIframe" title="iframe"> </iframe>
 </div>
 <script>
 window.onbeforeunload = () => '';
@@ -327,8 +327,12 @@ function check(){
   <script>
      const urlParams = new URLSearchParams(window.location.search);
      if (urlParams.has('url')){
-       alert(urlParams.get('url'));
+       //alert(urlParams.get('url'));
        document.getElementById("myiframe").src = urlParams.get('url');
+     }
+     else
+     {
+       document.getElementById("myiframe").src = "https://www.google.com";
      }
   </script>
 </body>
