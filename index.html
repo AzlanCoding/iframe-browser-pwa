@@ -59,7 +59,6 @@ body {
       //document.getElementById("myiframe").src = "https://www.google.com";
       urlStart = "https://www.google.com";
     }
-    alert(typeof urlStart);
 	const getValidUrl = (url = "") => {
     let newUrl = window.decodeURIComponent(url);
     newUrl = newUrl.trim().replace(/\s/g, "");
@@ -339,6 +338,7 @@ function check(){
   </script>
   <script src="js/app.js"></script>
   <script>
+     alert(document.getElementById("myiframe").src);
      const urlParams = new URLSearchParams(window.location.search);
      if (urlParams.has('url')){
        //alert(urlParams.get('url'));
