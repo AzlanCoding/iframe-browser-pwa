@@ -9,7 +9,7 @@ day = d.getDay();
 //alert(hrs);
 //alert(min);
 function pass() {
-  return prompt("Enter Password:", "Unlocked during 11:00am to 11:40am GMT+0800 (Singapore Standard Time)");
+  return prompt("Enter Password:","");// "Unlocked during 11:00am to 11:40am GMT+0800 (Singapore Standard Time)");
 }
 function word() {
 while (true) {
@@ -24,6 +24,7 @@ while (true) {
 }
 }
 function breaks() {
+	return false
 	let falsed = false;
 	if (hrs == 11 && min >= 40 && falsed == true) { /*not needed*/ 
 		return true
@@ -33,12 +34,13 @@ function breaks() {
 		return false
 	}
 }
-if (hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == true){
+if (false){//(hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| auth == true){
     console.log("pass not needed as requirent fullfilled");
     
 }else {
     console.log("AUTHENTICATING...")
-    alert("You are using this webite during school hours. Pls enter the password to bypass. Current time: " + d);
+    alert("This website has been locked");
+    //alert("You are using this webite during school hours. Pls enter the password to bypass. Current time: " + d);
     word();
 }
 //}
