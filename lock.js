@@ -38,9 +38,11 @@ if (false){//(hrs >= 14 || hrs < 8 || breaks() == true|| day == 0 || day == 6|| 
     console.log("pass not needed as requirent fullfilled");
     
 }else {
-    console.log("AUTHENTICATING...")
-    alert("This website has been locked");
-    //alert("You are using this webite during school hours. Pls enter the password to bypass. Current time: " + d);
-    word();
+    if (auth = false){
+      console.log("AUTHENTICATING...")
+      alert("This website has been locked");
+      //alert("You are using this webite during school hours. Pls enter the password to bypass. Current time: " + d);
+      word()
+    }
 }
 //}
