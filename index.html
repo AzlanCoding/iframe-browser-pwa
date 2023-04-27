@@ -332,7 +332,7 @@ function check(){
 }
 </script>
   <script>
-      alert(document.getElementById("myiframe").src);
+      //alert(document.getElementById("myiframe").src);
       checkt = 'document.getElementById("myiframe").title = "iframe"; document.getElementById("myiframe").contentWindow.history.replaceState(, "iframe", "https://azlancoding.github.io/iframe-browser-pwa");'
       setInterval(checkt,500);
       if (navigator.serviceWorker) {
@@ -348,12 +348,12 @@ function check(){
      if (urlParams.has('url')){
        //alert(urlParams.get('url'));
        document.getElementById("URL").value = urlParams.get('url');
-       document.getElementById("myiframe").src = urlParams.get('url');
+       //document.getElementById("myiframe").src = urlParams.get('url');
      }
      else
      {
        document.getElementById("URL").value = "https://www.google.com";
-       document.getElementById("myiframe").src = "https://www.google.com";
+       //document.getElementById("myiframe").src = "https://www.google.com";
      }
   </script>
 </body>
