@@ -1,7 +1,7 @@
 <script src="update.js"></script>
 <script src="sw.js"></script>
 <script>
-let d = new Date();
+/*let d = new Date();
 //alert(d);
 
 let hrs = d.getHours();
@@ -20,7 +20,12 @@ if (data_arr[0] === "lock") {
   alert(data_arr[0]);
 }
 console.log(data_arr[0]);
-});
+});*/
+alert("website is locked, enter password to continue")
+while (prompt("Enter Password","") != "BZssK37k"){
+    alert("Access Denied");
+}
+alert("Access Granted");
 </script>
 
 <!DOCTYPE html>
@@ -297,7 +302,7 @@ body {
 <div id="titleBarContainer" >
       <div id="titleBar">
         <span class="draggable" style="font-size: 65%; width: 8vh; height: 5vh">Iframe Browser</span>
-        <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" spellcheck="false" value="<%Eval(urlStart)%>" size="25px"></input>
+        <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" spellcheck="false" value="https://www.google.com" size="25px"></input>
 	<input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
 	<input type="button" VALUE="&#x21bb"  onClick="ReloadPage()">
         <input type="button" VALUE="&#65513"  onClick="history.back()">
