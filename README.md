@@ -17,7 +17,7 @@ Password to website if prompted: BZssK37k <br>
 **TO UPDATE THE WEBSITE,REINSTALL PWA & CLEAR WEBSITE DATA(Cache)**
 # Disclaimer
 1. I don't actually know, html and Javascript, I just copied and modify online code based on experience with C++, C# and Python.  
-2. I am only 14 😁. 
+2. I am only 15 😁. 
 3. I did not make this extension, someonelse did.
 4. Use of this website is at your own risk. If your school cathches you, It's none of my buisiness.
 # Recently added features 
