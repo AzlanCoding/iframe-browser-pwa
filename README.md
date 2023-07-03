@@ -16,10 +16,8 @@ I managed to create a PWA for it. You may install it from the link above. <br>
 Password to website if prompted: BZssK37k <br>
 **TO UPDATE THE WEBSITE,REINSTALL PWA & CLEAR WEBSITE DATA(Cache)**
 # Disclaimer
-1. I don't actually know, html and Javascript, I just copied and modify online code based on experience with C++, C# and Python.  
-2. I am only 15 😁. 
-3. I did not make this extension, someonelse did.
-4. Use of this website is at your own risk. If your school cathches you, It's none of my buisiness.
+1. I did not make this extension, someonelse did.
+2. Use of this website is at your own risk. If your school cathches you, It's none of my buisiness.
 # Recently added features 
 1. Fullscreen option
 2. Back and forward buttons
@@ -29,15 +27,5 @@ Password to website if prompted: BZssK37k <br>
 # Recently fixed
 1. Fixed bug in which blank url input returns blank iframe (now returns 404)
 2. Disabled spellcheck in url bar
-# Upcoming features
-1. A sidebar that shows:
-  a. History
-  b. Bookmarks
-2. Use of cookies to store history and bookmarks
 # Removed Features
 1. Windows Overlay Function was replaced with Tab Strip as it gave it a more, browser like look.
-# Need help from public
-1. known issues
-# Known issues
-1. Some websites like reddit can only be shown in the iframe browser for 3 seconds and disappears after that.
-2. Website cannot bypass proxy
