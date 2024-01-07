@@ -14,6 +14,7 @@ Using this extension to help the site work: https://chrome.google.com/webstore/d
 This extension ignores X-frame-headers and Content Security Policy (CSP) Headers. <br>
 I managed to create a PWA for it. You may install it from the link above. <br>
 Password to website if prompted: BZssK37k <br>
+This website is the first HTML file I've ever created. I wrote and edited it from the Github website. Thus, the CSS, Javascript and HTML is all very badly programmed with poor indentation.<br> 
 **TO UPDATE THE WEBSITE,REINSTALL PWA & CLEAR WEBSITE DATA(Cache)**
 # Disclaimer
 1. I did not make this extension, someonelse did.
